@@ -2,28 +2,48 @@
 
 a lightweight container library for node.js
 
-TODO: Write a better description
-
 
 ## Status
 
 TODO: Add status badges
 
 
-
 ## Installation
 
-TODO: Write a installation guide
+```bash
+$ npm install smallbox
+```
 
 
 ## Usage
 
-TODO: Write usage instructions here
+```javascript
+var container = require('smallbox');
+
+// register components
+container.register('user:name', 'Javier');
+container.register('user:surname', 'Aranda');
+container.register('files:storage', 's3');
+
+// get components
+if ( container.has('user:name') ) {
+  console.log( container.lookup('user:name') );
+}
+
+// using wildcard
+container.lookup('user:*'); //=> { 'user:name': 'Javier', 'user:surname': 'Aranda' }
+```
+
+More examples are available inside the code.
 
 
 ## Testing
 
-TODO: Write how to test
+The library is tested using Mocha.
+
+```bash
+$ npm test
+```
 
 
 ## Contributing
