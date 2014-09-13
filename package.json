@@ -1,6 +1,6 @@
 {
   "name": "smallbox",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "a lightweight container library for node.js",
   "author": "Javier Aranda <javier@aranda.io> (http://aranda.io)",
   "homepage": "https://github.com/arandaio/smallbox",
