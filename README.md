@@ -21,17 +21,17 @@ $ npm install smallbox
 var container = require('smallbox');
 
 // register components
-container.register('user:name', 'Javier');
-container.register('user:surname', 'Aranda');
-container.register('files:storage', 's3');
+container.define('user:name', 'Javier');
+container.define('user:surname', 'Aranda');
+container.define('files:storage', 's3');
 
 // get components
 if ( container.has('user:name') ) {
-  console.log( container.lookup('user:name') );
+  console.log( container.require('user:name') );
 }
 
 // using wildcard
-container.lookup('user:*'); //=> { 'user:name': 'Javier', 'user:surname': 'Aranda' }
+container.require('user:*'); //=> { 'user:name': 'Javier', 'user:surname': 'Aranda' }
 ```
 
 More examples are available inside the code.
