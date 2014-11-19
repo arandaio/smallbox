@@ -18,7 +18,7 @@
     "LICENSE",
     "README.md"
   ],
-  "main": "lib/index.js",
+  "main": "lib/smallbox.js",
   "dependencies": {
     "utils-merge": "1.0.0",
     "wildcard": "1.0.0"
