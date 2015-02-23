@@ -4,7 +4,6 @@
 
 a lightweight container library for node.js
 
-[![Node.js Version][node-image]][node-url]
 [![Build Status][travis-image]][travis-url]
 
 
@@ -34,7 +33,23 @@ if ( container.has('user:name') ) {
 container.require('user:*'); //=> { 'user:name': 'Javier', 'user:surname': 'Aranda' }
 ```
 
-More examples are available inside the code.
+### Share a container between two modules
+
+```javascript
+// module_a.js
+
+var container = require('smallbox');
+container.define('user:location', 'Spain');
+```
+
+```javascript
+// module_b.js
+
+var container = require('smallbox');
+container.require('user:location'); // => 'Spain'
+```
+
+More examples are available inside the code or tests.
 
 
 ## Testing
@@ -72,11 +87,9 @@ $ npm test
 
 ## License
 
-Copyright (c) 2014 Javier Aranda - Released under [MIT](LICENSE) license
+Copyright (c) 2015 Javier Aranda - Released under [MIT](LICENSE) license
 
 [npm-image]: https://nodei.co/npm/smallbox.png
 [npm-url]: https://npmjs.org/package/smallbox
-[node-image]: http://img.shields.io/badge/node.js-%3E%3D_0.8-brightgreen.svg?style=flat-square
-[node-url]: http://nodejs.org/download/
 [travis-image]: https://img.shields.io/travis/arandaio/smallbox.svg?style=flat-square
 [travis-url]: https://travis-ci.org/arandaio/smallbox
