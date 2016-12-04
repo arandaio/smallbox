@@ -63,7 +63,7 @@ $ npm test
 
 ## Contributing
 
-1. Fork it ( https://github.com/arandaio/smallbox/fork )
+1. Fork it ( https://github.com/javierav/smallbox/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -75,21 +75,11 @@ $ npm test
 **smallbox** uses [Semantic Versioning 2.0.0](http://semver.org)
 
 
-## Contact
-
-* Author: Javier Aranda
-* Home Page: http://aranda.io
-* Twitter: https://twitter.com/arandaio
-* Email: javier@aranda.io
-* Github: https://github.com/arandaio
-* Issues: https://github.com/arandaio/smallbox/issues
-
-
 ## License
 
-Copyright (c) 2015 Javier Aranda - Released under [MIT](LICENSE) license
+Copyright (c) 2016 Javier Aranda - Released under [MIT](LICENSE) license
 
 [npm-image]: https://nodei.co/npm/smallbox.png
 [npm-url]: https://npmjs.org/package/smallbox
-[travis-image]: https://img.shields.io/travis/arandaio/smallbox.svg?style=flat-square
-[travis-url]: https://travis-ci.org/arandaio/smallbox
+[travis-image]: https://img.shields.io/travis/javierav/smallbox.svg?style=flat-square
+[travis-url]: https://travis-ci.org/javierav/smallbox

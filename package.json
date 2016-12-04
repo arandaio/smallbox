@@ -1,14 +1,17 @@
 {
   "name": "smallbox",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "a lightweight container library for node.js",
-  "author": "Javier Aranda <javier@aranda.io> (http://aranda.io)",
-  "homepage": "https://github.com/arandaio/smallbox",
+  "author": {
+    "name": "Javier Aranda",
+    "email": "javier.aranda.varo@gmail.com"
+  },
+  "homepage": "https://github.com/javierav/smallbox",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arandaio/smallbox.git"
+    "url": "https://github.com/javierav/smallbox.git"
   },
-  "bugs": "https://github.com/arandaio/smallbox/issues",
+  "bugs": "https://github.com/javierav/smallbox/issues",
   "keywords": [
     "container",
     "ioc"
